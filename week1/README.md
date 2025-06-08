@@ -23,11 +23,6 @@ After submitting the form, the entered details are shown here.
 
 ![Details Page](./public/details-page.png)
 
-> **Note:**
->
-> - To add your screenshots, take a screenshot of each page and save them as `form-page.png` and `details-page.png` in the `public` folder of your project.
-> - The images will then appear above.
-
 ## Getting Started
 
 1. Install dependencies:
