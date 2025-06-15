@@ -2,6 +2,9 @@
 
 A modern, feature-rich Todo List application built with React and Vite.
 
+## Project Screenshot
+![Todo List Application Interface](/public/image.png)
+
 ## Features
 
 - Add, remove, and mark tasks as completed
