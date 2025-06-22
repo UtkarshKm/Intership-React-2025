@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Light gray background */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Add more styles as needed */
