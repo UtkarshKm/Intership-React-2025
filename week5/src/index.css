@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Spotify 2.0 Design System - Dark theme with vibrant accents */
+
+@layer base {
+  :root {
+    /* Spotify-inspired color palette */
+    --background: 220 13% 7%;
+    --background-elevated: 220 13% 10%;
+    --background-card: 220 13% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 13% 12%;
+    --card-foreground: 0 0% 95%;
+    --card-hover: 220 13% 15%;
+
+    --popover: 220 13% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Spotify green as primary */
+    --primary: 141 76% 48%;
+    --primary-foreground: 220 13% 7%;
+    --primary-hover: 141 76% 55%;
+
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 13% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 141 76% 48%;
+    --accent-foreground: 220 13% 7%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 20%;
+    --input: 220 13% 15%;
+    --ring: 141 76% 48%;
+
+    --radius: 0.5rem;
+
+    /* Custom Spotify gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(141 76% 48%), hsl(141 76% 35%));
+    --gradient-background: linear-gradient(180deg, hsl(220 13% 10%), hsl(220 13% 7%));
+    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+    
+    /* Glassmorphism effects */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Spotify-specific utility classes */
+@layer components {
+  .glass-card {
+    @apply bg-[var(--glass-bg)] border border-[var(--glass-border)] backdrop-blur-xl;
+  }
+  
+  .spotify-gradient {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-background {
+    background: var(--gradient-background);
+  }
+}
